@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>PointJS Game</title>
+</head>
+<body>
+<script type="text/javascript" src="point.js"></script>
+<script type="text/javascript">
+
+var pjs = new PointJS('2d', 400, 400);
+pjs.system.initFullPage();
+
+var vector = pjs.vector;
+var log = pjs.system.log;
+var game = pjs.game;
+var point = vector.point;
+var size = vector.size;
+var camera = pjs.camera;
+var brush = pjs.brush;
+var OOP = pjs.OOP;
+var math = pjs.math;
+
+var touch = pjs.touchControl;
+touch.initTouchControl();
+
+var width = game.getWH() .w;
+var height = game.getWH() .h;
+
+var call = game.newImageObject({
+ file : 'img/call.png',
+ scale : 0.8
+});
+
+var drawInterface = function () {
+ var w = 250;
+ brush.drawRectS({
+  x : width-w, y : 0,
+  w : w, h : height,
+  fillColor : '#D6A57F'
+ });
+ 
+ brush.drawTextS({
+  x : width-w + 10, y : 10,
+  size : 25, color : '#FFFFFF',
+  text : 'Убито: 0'
+ });
+ 
+ brush.drawLineS({
+  x1 : width-w, y1 : 45,
+  x2 : width, y2 : 45,
+  strokeColor : '#FFFFFF'
+ });
+ 
+};
+
+game.newLoop('game', function () {
+ game.fill('#D9D9D9');
+ 
+ call.draw();
+ 
+ drawInterface();
+ 
+ });
+ 
+ game.startLoop('game');
+
+
+</script>
+</body>
+</html>
