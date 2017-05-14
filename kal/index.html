@@ -17,11 +17,13 @@
   }, function() { 
      // API initialization failed 
      // Can reload page here 
-}, '5.64'); 
+}, '5.64');
 
-VK.api("wall.post", {"message": "Hello!"}, function (data) {
-alert("Post ID:" + data.response.post_id);
-});
+btn.addEventListener(MouseEvent.CLICK, openFriends); //btn - некая кнопка или мувик на сцене
+ 
+function openFriends(e:MouseEvent):void {
+   VK.callMethod("showInviteBox");
+}
 
 </script>
 
