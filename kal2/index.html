@@ -21,7 +21,20 @@
 </script>
 
 <div id="knopka" onClick=prigl_friends();><img src="http://clipart-finder.com/data/mini/Anonymous_Pill_Button_Yellow.png"></div>
+
+<script type=text/javascript> 
+function prigl_friends(){ 
+VK.callMethod("showInviteBox"); 
+} 
+</script>
+
 <div id="knopka" onClick=VK.api();><img src="http://clipart-finder.com/data/mini/Anonymous_Pill_Button_Yellow.png"></div>
+
+<script type=text/javascript> 
+function VK.api("wall.post", {"message": "Hello!"}, function (data) {
+alert("Post ID:" + data.response.post_id);
+});
+</script>
 
 <div id="calculator">
     <form>
