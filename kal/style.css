@@ -6,9 +6,9 @@
 	border: 5px solid black;
 	text-align: center;
 	background: lightgreen;
-	margin: 150px auto;
+	margin: 30px auto;
 	box-shadow: 0px 0px 50px gray;
-		border-radius: 5px;
+	border-radius: 5px;
 }
 
 #display{
