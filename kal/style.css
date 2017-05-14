@@ -52,3 +52,11 @@
 	background: yellow;
 	font-weight: bold;
 }	
+
+#knopka{
+	margin-top: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+
+
