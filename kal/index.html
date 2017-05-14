@@ -18,18 +18,15 @@
      // API initialization failed 
      // Can reload page here 
 }, '5.64');
-
-btn.addEventListener(MouseEvent.CLICK, openFriends); //btn - некая кнопка или мувик на сцене
- 
-function openFriends(e:MouseEvent):void {
-   VK.callMethod("showInviteBox");
-}
-
 </script>
 
-<a
- style="font-weight: bold;" href="javascript&#058;;"
- onclick="VK.External.showInviteBox();"> ПРИГЛАСИТЬ ДРУЗЕЙ </a>
+<div id="knopka" onClick=prigl_friends();><img src="http://1.bp.blogspot.com/-7PbHupcU0Bc/VnLC4uhc-JI/AAAAAAAABsY/ZjH8i2PgoJc/s320/1199042.jpg"></div>
+
+<script type=text/javascript> 
+function prigl_friends(){ 
+VK.callMethod("showInviteBox"); 
+} 
+</script>
 
 <div id="calculator">
     <form>
