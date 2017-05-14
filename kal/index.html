@@ -84,5 +84,31 @@ VK.init( function(){
 
 <script type="text/javascript" src="/js/calculator.js"></script>
 
+	
+        <div id="vk_ads_79727"></div>
+<script type="text/javascript">
+  setTimeout(function() {
+    var adsParams = {"ad_unit_id":79727,"ad_unit_hash":"a8c75da21dd6d07a486c03d3aacd13c7"};
+    function vkAdsInit() {
+      VK.Widgets.Ads('vk_ads_79727', {}, adsParams);
+    }
+    if (window.VK && VK.Widgets) {
+      vkAdsInit();
+    } else {
+      if (!window.vkAsyncInitCallbacks) window.vkAsyncInitCallbacks = [];
+      vkAsyncInitCallbacks.push(vkAdsInit);
+      var protocol = ((location.protocol === 'https:') ? 'https:' : 'http:');
+      var adsElem = document.getElementById('vk_ads_79727');
+      var scriptElem = document.createElement('script');
+      scriptElem.type = 'text/javascript';
+      scriptElem.async = true;
+      scriptElem.src = protocol + '//vk.com/js/api/openapi.js?146';
+      adsElem.parentNode.insertBefore(scriptElem, adsElem.nextSibling);
+    }
+  }, 0);
+</script>
+    
+	
+	
 </body>
 </html>
