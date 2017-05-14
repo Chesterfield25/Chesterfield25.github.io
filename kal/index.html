@@ -47,6 +47,31 @@ VK.init( function(){
 });
 </script>
 	
+	        <div id="vk_ads_79728"></div>
+<script type="text/javascript">
+  setTimeout(function() {
+    var adsParams = {"ad_unit_id":79728,"ad_unit_hash":"8c0519f2c2536025de8e4841d3a754b4"};
+    function vkAdsInit() {
+      VK.Widgets.Ads('vk_ads_79728', {}, adsParams);
+    }
+    if (window.VK && VK.Widgets) {
+      vkAdsInit();
+    } else {
+      if (!window.vkAsyncInitCallbacks) window.vkAsyncInitCallbacks = [];
+      vkAsyncInitCallbacks.push(vkAdsInit);
+      var protocol = ((location.protocol === 'https:') ? 'https:' : 'http:');
+      var adsElem = document.getElementById('vk_ads_79728');
+      var scriptElem = document.createElement('script');
+      scriptElem.type = 'text/javascript';
+      scriptElem.async = true;
+      scriptElem.src = protocol + '//vk.com/js/api/openapi.js?146';
+      adsElem.parentNode.insertBefore(scriptElem, adsElem.nextSibling);
+    }
+  }, 0);
+</script>
+    
+	
+	
 <div id="calculator">
     <form>
        <input type="text" id="display"><br>
