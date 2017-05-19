@@ -119,5 +119,16 @@ VK.init( function(){
   }, 0);
 </script>	
 	
+	
+<script src='http://vk.com/js/api/xd_connection.js?2' type='text/javascript'></script>  
+<script type='text/javascript'>  
+VK.init(function() {  
+VK.api('friends.getAppUsers', {uid:"<?php $a=$_GET['viewer_id']; echo $a;?>"}, function(data) {  
+var a = data.response.length;  
+document.getElementById('step2').innerHTML = a;  
+});  
+});  
+</script>	
+	
 </body>
 </html>
